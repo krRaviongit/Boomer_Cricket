@@ -24,8 +24,8 @@
     resultChoice='Computer Won!';
   }
   alert(`You have chosen Bat.  Computer has chosen ${computerChoice} and ${resultChoice}`);">Bat</button>
-  <button onclick="let randomNumber=Math.random()*3;  
-  let computerChoice;
+  <button onclick="randomNumber=Math.random()*3;  
+  computerChoice;
   if(randomNumber > 0 && randomNumber <= 1){
     computerChoice = 'Bat';
   } else if(randomNumber > 1 && randomNumber <= 2){
@@ -33,15 +33,15 @@
   } else {
     computerChoice = 'Stump';
   }
-  let resultChoice;
+  resultChoice;
   if(computerChoice === 'Ball'){
-    resultChoice='You Won!';
-  }else if(computerChoice === 'Bat'){
     resultChoice=`It's a tie!`;
-  }else if(computerChoice === 'Stump'){
+  }else if(computerChoice === 'Bat'){
     resultChoice='Computer Won!';
+  }else if(computerChoice === 'Stump'){
+    resultChoice='You Won!';
   }
-  alert(`You have chosen Bat.  Computer has chosen ${computerChoice} and ${resultChoice}`);">Ball</button>
+  alert(`You have chosen Ball.  Computer has chosen ${computerChoice} and ${resultChoice}`);">Ball</button>
   <button>Stump</button>
 </body>
 </html>
