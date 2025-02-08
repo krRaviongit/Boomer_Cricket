@@ -3,8 +3,14 @@ body{
   font-family: "Poppins", serif;
   background-image: url(—Pngtree—3d\ illustration\ of\ a\ cricket_7253495.jpg);
   background-size: cover;
-  background-color: rgba(255, 255, 255, 0.5); 
+  background-color: rgba(255, 255, 255, 0.3); 
   background-blend-mode: lighten; 
 }
+h1{
+  font-size: 100px;
+  color: white;
+  -webkit-text-stroke: 0.8px black;
+}
+
 
 
