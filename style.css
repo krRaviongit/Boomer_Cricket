@@ -23,7 +23,13 @@ h1{
   font-size: 30px;
   font-weight: 600;
   color: aliceblue;
-  box-shadow: 10px 10px 5px 0 rgb(80, 80, 80);
+  box-shadow: 10px 10px 5px 0 rgb(116, 114, 114,0.9);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+.click:hover{
+  transform: scale(1.07);
+  box-shadow: none;
+
 }
 
 
