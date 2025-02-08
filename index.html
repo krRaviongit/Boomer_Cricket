@@ -23,15 +23,25 @@
   }else if(computerChoice === 'Stump'){
     resultChoice='Computer Won!';
   }
-  alert(`You have chosen Bat.  Computer has chosen ${computerChoice} and ${resultChoice}`);
-  
-  
-  
-  
-  
-  
-  ">Bat</button>
-  <button>Ball</button>
+  alert(`You have chosen Bat.  Computer has chosen ${computerChoice} and ${resultChoice}`);">Bat</button>
+  <button onclick="let randomNumber=Math.random()*3;  
+  let computerChoice;
+  if(randomNumber > 0 && randomNumber <= 1){
+    computerChoice = 'Bat';
+  } else if(randomNumber > 1 && randomNumber <= 2){
+    computerChoice = 'Ball';
+  } else {
+    computerChoice = 'Stump';
+  }
+  let resultChoice;
+  if(computerChoice === 'Ball'){
+    resultChoice='You Won!';
+  }else if(computerChoice === 'Bat'){
+    resultChoice=`It's a tie!`;
+  }else if(computerChoice === 'Stump'){
+    resultChoice='Computer Won!';
+  }
+  alert(`You have chosen Bat.  Computer has chosen ${computerChoice} and ${resultChoice}`);">Ball</button>
   <button>Stump</button>
 </body>
 </html>
