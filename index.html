@@ -13,15 +13,15 @@
   } else if(randomNumber > 1 && randomNumber <= 2){
     computerChoice = 'Ball';
   } else {
-    computerChoice = 'Stump';
+    computerChoice = 'Stumps';
   }
-  
+
   let resultChoice;
   if(computerChoice === 'Ball'){
     resultChoice='You Won!';
   }else if(computerChoice === 'Bat'){
     resultChoice=`It's a tie!`;
-  }else if(computerChoice === 'Stump'){
+  }else if(computerChoice === 'Stumps'){
     resultChoice='Computer Won!';
   }
 
@@ -33,14 +33,14 @@
   } else if(randomNumber > 1 && randomNumber <= 2){
     computerChoice = 'Ball';
   } else {
-    computerChoice = 'Stump';
+    computerChoice = 'Stumps';
   }
 
   if(computerChoice === 'Ball'){
     resultChoice=`It's a tie!`;
   }else if(computerChoice === 'Bat'){
     resultChoice='Computer Won!';
-  }else if(computerChoice === 'Stump'){
+  }else if(computerChoice === 'Stumps'){
     resultChoice='You Won!';
   }
 
@@ -52,18 +52,18 @@
   } else if(randomNumber > 1 && randomNumber <= 2){
     computerChoice = 'Ball';
   } else {
-    computerChoice = 'Stump';
+    computerChoice = 'Stumps';
   }
 
   if(computerChoice === 'Ball'){
-    resultChoice=`It's a tie!`;
-  }else if(computerChoice === 'Bat'){
     resultChoice='Computer Won!';
-  }else if(computerChoice === 'Stump'){
+  }else if(computerChoice === 'Bat'){
     resultChoice='You Won!';
+  }else if(computerChoice === 'Stumps'){
+    resultChoice=`It's a tie!`;
   }
 
-  alert(`You have chosen Ball.  Computer has chosen ${computerChoice} and ${resultChoice}`);">Stump</button>
+  alert(`You have chosen Stumps.  Computer has chosen ${computerChoice} and ${resultChoice}`);">Stump</button>
 </body>
 
 </html>
