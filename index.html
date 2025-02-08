@@ -6,7 +6,23 @@
 </head>
 <body>
   <h1>Noob Cricket Game</h1>
-  <button onclick="console.log('You have chosen Bat')">Bat</button>
+  <button onclick="console.log('You have chosen Bat');
+  let randomNumber=Math.random()*3;  //used to generate  random number between 0 and 3
+  if(randomNumber > 0 && randomNumber <= 1){
+    let computerChoice = 'Bat';
+  } else if(randomNumber > 1 && randomNumber <= 2){
+    let computerChoice = 'Ball';
+  } else {
+    let computerChoice = 'Stump';
+  }
+   
+  
+  
+  
+  
+  
+  
+  ">Bat</button>
   <button>Ball</button>
   <button>Stump</button>
 </body>
