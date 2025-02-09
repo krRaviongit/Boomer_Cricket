@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Cricket Game</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="header">
     <h1>Boomer Cricket</h1>
     <img src="27172420_6061.svg" alt="logo">
   </div>
- 
-  <button class="click" onclick="let randomNumber=Math.random()*3;  //used to generate  random number between 0 and 3
-  let computerChoice;
-  if(randomNumber > 0 && randomNumber <= 1){
-    computerChoice = 'Bat';
-  } else if(randomNumber > 1 && randomNumber <= 2){
-    computerChoice = 'Ball';
-  } else {
-    computerChoice = 'Stumps';
-  }
+
+  <button class="click" onclick="
+  generateComputerChoice();
 
   let resultChoice;
   if(computerChoice === 'Ball'){
@@ -30,15 +25,9 @@
   }
 
   alert(`You have chosen Bat.  Computer has chosen ${computerChoice} and ${resultChoice}`);">Bat</button>
-  
-  <button class="click" onclick=" randomNumber=Math.random()*3;  
-  if(randomNumber > 0 && randomNumber <= 1){
-    computerChoice = 'Bat';
-  } else if(randomNumber > 1 && randomNumber <= 2){
-    computerChoice = 'Ball';
-  } else {
-    computerChoice = 'Stumps';
-  }
+
+  <button class="click" onclick=" 
+  generateComputerChoice();
 
   if(computerChoice === 'Ball'){
     resultChoice=`It's a tie!`;
@@ -49,15 +38,9 @@
   }
 
   alert(`You have chosen Ball.  Computer has chosen ${computerChoice} and ${resultChoice}`);">Ball</button>
-  
-  <button class="click" onclick=" randomNumber=Math.random()*3;  
-  if(randomNumber > 0 && randomNumber <= 1){
-    computerChoice = 'Bat';
-  } else if(randomNumber > 1 && randomNumber <= 2){
-    computerChoice = 'Ball';
-  } else {
-    computerChoice = 'Stumps';
-  }
+
+  <button class="click" onclick=" 
+  generateComputerChoice();
 
   if(computerChoice === 'Ball'){
     resultChoice='Computer Won!';
@@ -68,6 +51,20 @@
   }
 
   alert(`You have chosen Stumps.  Computer has chosen ${computerChoice} and ${resultChoice}`);">Stumps</button>
+
+  <script>
+    let computerChoice;
+    function generateComputerChoice() {
+      let randomNumber = Math.random() * 3;  //used to generate  random number between 0 and 3
+      if (randomNumber > 0 && randomNumber <= 1) {
+        computerChoice = 'Bat';
+      } else if (randomNumber > 1 && randomNumber <= 2) {
+        computerChoice = 'Ball';
+      } else {
+        computerChoice = 'Stumps';
+      }
+    }
+  </script>
 </body>
 
 </html>
