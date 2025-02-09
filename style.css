@@ -5,6 +5,7 @@
 body{
   text-align: center;
   background-image: url(—Pngtree—3d\ illustration\ of\ a\ cricket_7253495.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.3); 
   background-blend-mode: lighten; 
