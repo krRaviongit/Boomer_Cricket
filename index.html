@@ -36,6 +36,7 @@
       lost:0,
       tie:0,
     };
+    
     function generateComputerChoice() {
       let randomNumber = Math.random() * 3;  //used to generate  random number between 0 and 3
       if (randomNumber > 0 && randomNumber <= 1) {
@@ -85,7 +86,14 @@
       }
     }
     function showResult(userMove, computerMove, result){
-      alert(`You have chosen ${userMove}.  Computer has chosen ${computerMove} and ${result}`);
+      alert(`You have chosen ${userMove}.  Computer has chosen ${computerMove} 
+      
+      
+      
+      ${result}
+
+
+      Won:${score.win},Lost:${score.lost},Tie:${score.tie}`);
     }
   </script>
 </body>
