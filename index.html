@@ -31,11 +31,15 @@
   ">Stumps</button>
 
   <script>
-    let score={
-      win:0,
-      lost:0,
-      tie:0,
-    };
+    let score = {
+    win: 0,
+    lost: 0,
+    tie: 0,
+    displayScore: function () {
+    return `Number of Matches Won: ${this.win}, Lost: ${this.lost}, Tie: ${this.tie}`;
+  }
+};
+
     
     function generateComputerChoice() {
       let randomNumber = Math.random() * 3;  //used to generate  random number between 0 and 3
@@ -93,7 +97,7 @@
       ${result}
 
 
-      Won:${score.win},Lost:${score.lost},Tie:${score.tie}`);
+      ${score.displayScore()}`);
     }
   </script>
 </body>
