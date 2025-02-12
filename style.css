@@ -61,12 +61,21 @@ h1{
 #one{
   background: linear-gradient(90deg, hsla(189, 92%, 69%, 1) 0%, hsla(335, 89%, 66%, 1) 50%, hsla(240, 63%, 57%, 1) 100%);
 }
+#one:hover{
+  color:chartreuse;
+}
 
 #two{
   background: linear-gradient(90deg, hsla(179, 83%, 64%, 1) 0%, hsla(338, 75%, 64%, 1) 50%, hsla(14, 92%, 86%, 1) 100%);
 }
+#two:hover{
+  color:chartreuse;
+}
 #three{
   background: linear-gradient(90deg, hsla(53, 84%, 74%, 1) 0%, hsla(336, 87%, 61%, 1) 50%, hsla(262, 81%, 71%, 1) 100%)
+}
+#three:hover{
+  color:chartreuse;
 }
 
 
