@@ -45,7 +45,7 @@ h1{
   width:250px;
   margin:0 10px;
   border: none;
-  border-radius: 100px;
+  border-radius: 30px;
   font-family: monospace;
   font-size: 40px;
   font-weight: 800;
@@ -59,23 +59,23 @@ h1{
 
 }
 #one{
-  background: linear-gradient(90deg, hsla(189, 92%, 69%, 1) 0%, hsla(335, 89%, 66%, 1) 50%, hsla(240, 63%, 57%, 1) 100%);
+  background: radial-gradient(circle, hsla(35, 100%, 71%, 1) 0%, hsla(0, 55%, 50%, 1) 79%);
 }
 #one:hover{
-  color:chartreuse;
+  color:rgb(238, 238, 238);
 }
 
 #two{
-  background: linear-gradient(90deg, hsla(179, 83%, 64%, 1) 0%, hsla(338, 75%, 64%, 1) 50%, hsla(14, 92%, 86%, 1) 100%);
+  background: radial-gradient(circle, hsla(35, 100%, 71%, 1) 0%, hsla(108, 55%, 50%, 1) 79%);
 }
 #two:hover{
-  color:chartreuse;
+  color:rgb(238, 238, 238);
 }
 #three{
-  background: linear-gradient(90deg, hsla(53, 84%, 74%, 1) 0%, hsla(336, 87%, 61%, 1) 50%, hsla(262, 81%, 71%, 1) 100%)
+  background: radial-gradient(circle, hsla(35, 100%, 71%, 1) 0%, hsla(194, 55%, 50%, 1) 79%);
 }
 #three:hover{
-  color:chartreuse;
+  color:rgb(238, 238, 238);
 }
 
 
