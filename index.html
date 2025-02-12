@@ -31,25 +31,24 @@
   ">Stumps</button>
 
   <button onclick="localStorage.clear()
-  score={
-          win: 0,
-          lost: 0,
-          tie: 0,
-        }
+                resetScore();
   ">Reset</button>
 
   <script>
     let scoreStr=localStorage.getItem('Score');
-    let score=JSON.parse(scoreStr) || {
+    let score
+    resetScore(scoreStr);
+    
+    function resetScore(scoreStr){
+      score= scoreStr ? JSON.parse(scoreStr): {
               win: 0,
               lost: 0,
               tie: 0,
               };
   score.displayScore= function () {
     return `Number of Matches Won: ${this.win}, Lost: ${this.lost}, Tie: ${this.tie}`;
-  }
-
-    
+  };
+}
     function generateComputerChoice() {
       let randomNumber = Math.random() * 3;  //used to generate  random number between 0 and 3
       if (randomNumber > 0 && randomNumber <= 1) {
