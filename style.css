@@ -59,13 +59,14 @@ h1{
 
 }
 #one{
-  background: linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+  background: linear-gradient(90deg, hsla(189, 92%, 69%, 1) 0%, hsla(335, 89%, 66%, 1) 50%, hsla(240, 63%, 57%, 1) 100%);
 }
+
 #two{
-  background: linear-gradient(90deg, hsla(165, 89%, 31%, 1) 0%, hsla(161, 46%, 49%, 1) 100%);
+  background: linear-gradient(90deg, hsla(179, 83%, 64%, 1) 0%, hsla(338, 75%, 64%, 1) 50%, hsla(14, 92%, 86%, 1) 100%);
 }
 #three{
-  background: linear-gradient(90deg, hsla(192, 95%, 50%, 1) 0%, hsla(225, 89%, 47%, 1) 100%);
+  background: linear-gradient(90deg, hsla(53, 84%, 74%, 1) 0%, hsla(336, 87%, 61%, 1) 50%, hsla(262, 81%, 71%, 1) 100%)
 }
 
 
