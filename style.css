@@ -44,13 +44,13 @@ h1{
   height: 100px;
   width:200px;
   margin:0 10px;
-  border: 1px solid black;
+  border: none;
   border-radius: 100px;
   font-family: monospace;
   font-size: 30px;
   font-weight: 600;
   color: aliceblue;
-  box-shadow: 10px 10px 5px 0 rgb(116, 114, 114,0.9);
+  box-shadow: 10px 10px 5px 0 rgba(69, 69, 69, 0.9);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
 }
 .click:hover{
@@ -60,7 +60,6 @@ h1{
 }
 #one{
   background: linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
-
 }
 #two{
   background: linear-gradient(90deg, hsla(132, 79%, 68%, 1) 0%, hsla(101, 62%, 48%, 1) 100%);
