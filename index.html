@@ -12,19 +12,19 @@
     <img src="27172420_6061.svg" alt="logo">
   </div>
 
-  <button class="click" onclick="
+  <button id="one"  class="click" onclick="
   let computerChoice=generateComputerChoice();
   resultChoice= getResult(`Bat`, computerChoice);
   showResult(`Bat`, computerChoice, resultChoice);
   ">Bat</button>
 
-  <button class="click" onclick=" 
+  <button id="two"  class="click" onclick=" 
   computerChoice=generateComputerChoice();
   resultChoice= getResult(`Ball`, computerChoice);
   showResult(`Ball`, computerChoice, resultChoice);
   ">Ball</button>
 
-  <button class="click" onclick=" 
+  <button id="three" class="click" onclick=" 
   computerChoice=generateComputerChoice();
   resultChoice= getResult(`stumps`, computerChoice);
   showResult(`Stumps`, computerChoice, resultChoice);

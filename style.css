@@ -38,7 +38,6 @@ h1{
   margin:0 10px;
   border: 1px solid black;
   border-radius: 100px;
-  background-color: rgb(255, 39, 39);
   font-family: monospace;
   font-size: 30px;
   font-weight: 600;
@@ -51,6 +50,14 @@ h1{
   box-shadow: none;
 
 }
-
+#one{
+  background-color: rgb(255, 39, 39);
+}
+#two{
+  background-color: rgb(39, 212, 33);
+}
+#three{
+  background-color: rgb(39, 172, 255);
+}
 
 
