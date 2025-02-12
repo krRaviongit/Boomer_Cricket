@@ -31,14 +31,15 @@
   ">Stumps</button>
 
   <script>
-    let score = {
-    win: 0,
-    lost: 0,
-    tie: 0,
-    displayScore: function () {
+    let scoreStr=localStorage.getItem('Score');
+    let score=JSON.parse(scoreStr) || {
+              win: 0,
+              lost: 0,
+              tie: 0,
+              };
+  score.displayScore= function () {
     return `Number of Matches Won: ${this.win}, Lost: ${this.lost}, Tie: ${this.tie}`;
   }
-};
 
     
     function generateComputerChoice() {
@@ -90,6 +91,7 @@
       }
     }
     function showResult(userMove, computerMove, result){
+      localStorage.setItem('Score', JSON.stringify(score));
       alert(`You have chosen ${userMove}.  Computer has chosen ${computerMove} 
       
       
