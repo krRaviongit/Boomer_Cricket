@@ -45,13 +45,14 @@ h1{
   width:250px;
   margin:0 10px;
   border: none;
-  border-radius: 30px;
+  border-radius: 100px;
   font-family: monospace;
   font-size: 40px;
   font-weight: 800;
   color: rgb(255, 255, 255);
   box-shadow: 10px 10px 5px rgba(116, 114, 114, 0.9);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  cursor:pointer;
 }
 .click:hover{
   transform: scale(1.07);
