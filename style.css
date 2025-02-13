@@ -89,6 +89,13 @@ h1{
   font-weight: 700;
   font-size: 20px;
   margin-top: 240px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+  cursor: pointer;
+  
+}
+.reset:hover{
+  transform: scale(1.04);
+  background-color: brown;
 }
 
 
