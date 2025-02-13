@@ -4,10 +4,6 @@
 }
 body{
   text-align: center;
-  height: 100vh;
-  background-image: url(—Pngtree—3d\ illustration\ of\ a\ cricket_7253495.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   background-color: rgba(255, 255, 255, 0.3); 
   background-blend-mode: lighten; 
 }
@@ -15,6 +11,7 @@ body{
   display:flex;
   justify-content: center;
   align-items: center;
+  margin-top: -20px;
 }
 #firsth {
   background: -webkit-linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%);
@@ -23,8 +20,6 @@ body{
   -webkit-text-fill-color: transparent;
 
 }
-
-
 img{
   right:5px;
   height: 300px;
@@ -40,63 +35,8 @@ h1{
   color: black;
   
 }
-.click{
-  height: 100px;
-  width:250px;
-  margin:0 10px;
-  border: none;
-  border-radius: 100px;
-  font-family: monospace;
-  font-size: 40px;
-  font-weight: 800;
-  color: rgb(255, 255, 255);
-  box-shadow: 10px 10px 5px rgba(116, 114, 114, 0.9);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
-  cursor:pointer;
-}
-.click:hover{
-  transform: scale(1.07);
-  box-shadow: none;
 
-}
-#one{
-  background: radial-gradient(circle, hsla(35, 100%, 71%, 1) 0%, hsla(0, 55%, 50%, 1) 79%);
-}
-#one:hover{
-  color:rgb(238, 238, 238);
-}
 
-#two{
-  background: radial-gradient(circle, hsla(35, 100%, 71%, 1) 0%, hsla(108, 55%, 50%, 1) 79%);
-}
-#two:hover{
-  color:rgb(238, 238, 238);
-}
-#three{
-  background: radial-gradient(circle, hsla(35, 100%, 71%, 1) 0%, hsla(194, 55%, 50%, 1) 79%);
-}
-#three:hover{
-  color:rgb(238, 238, 238);
-}
-.reset{
-  color:ghostwhite;
-  padding:2px;
-  background-color: crimson;
-  border-radius: 50px;
-  border: none;
-  box-shadow: 3px 3px 7px black;
-  height: 50px;
-  width: 100px;
-  font-weight: 700;
-  font-size: 20px;
-  margin-top: 200px;
-  transition: transform 0.3s ease-in-out, background-color 0.3s ease;
-  cursor: pointer;
-  
-}
-.reset:hover{
-  transform: scale(1.04);
-  background-color: brown;
-}
+
 
 

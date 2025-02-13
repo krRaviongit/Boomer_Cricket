@@ -9,15 +9,20 @@
     <h1 id="firsth">Boomer Cricket</h1>
     <img src="27172420_6061.svg" alt="logo">
   </div>
-
-  <button id="one"  class="click" onclick="playGame('Bat')">Bat</button>
-  <button id="two"  class="click" onclick="playGame('Ball')">Ball</button>
-  <button id="three"  class="click" onclick="playGame('Stumps')">Stumps</button>
+ 
+  <button id="one"  class="click" onclick="playGame('Bat')"><img src="images/bat.png" alt="bat image"></button>
+  <button id="two"  class="click" onclick="playGame('Ball')">
+    <img src="images/ball.png" alt="ball image" class="choice-button">
+  </button>
+  <button id="three"  class="click" onclick="playGame('Stumps')">
+    <img src="images/stump.png" alt="stump image" class="choice-button">
+  </button>
 
   <h3 id="user-move"></h3>
   <h3 id="computer-move"></h3>
   <h3 id="result"></h3>
   <h3 id="score"></h3>
+  
 
   <footer>
     <button class="reset" onclick="resetScore()">Reset</button>
