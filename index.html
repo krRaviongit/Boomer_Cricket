@@ -29,11 +29,12 @@
   resultChoice= getResult(`stumps`, computerChoice);
   showResult(`Stumps`, computerChoice, resultChoice);
   ">Stumps</button>
-
-  <button onclick="localStorage.clear()
+  <footer>
+    <button class="reset"  onclick="localStorage.clear()
                 resetScore();
   ">Reset</button>
-
+  </footer>
+  
   <script>
     let scoreStr=localStorage.getItem('Score');
     let score

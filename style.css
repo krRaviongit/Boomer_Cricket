@@ -77,5 +77,18 @@ h1{
 #three:hover{
   color:rgb(238, 238, 238);
 }
+.reset{
+  color:ghostwhite;
+  padding:2px;
+  background-color: crimson;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 3px 3px 7px black;
+  height: 50px;
+  width: 100px;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 240px;
+}
 
 
