@@ -4,6 +4,7 @@
 <head>
   <title>Cricket Game</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
@@ -11,12 +12,9 @@
     <h1 id="firsth">Cricket<img class="logo" src="images/logo.png" alt="logo">Fever</h1>
   </div>
 
-  <button id="one" class="click" onclick="playGame('Bat')"><img src="images/bat.png" alt="bat image"
-      class="image"></button>
-  <button id="two" class="click" onclick="playGame('Ball')"><img src="images/ball.png" alt="ball image"
-      class="image"></button>
-  <button id="three" class="click" onclick="playGame('Stumps')"><img
-      src="images/pinpng.com-cricket-png-images-734104.png" alt="stump image" class="image"></button>
+  <button id="one" class="click" onclick="playGame('Bat')"><img src="images/bat.png" alt="bat image" class="image"></button>
+  <button id="two" class="click" onclick="playGame('Ball')"><img src="images/ball.png" alt="ball image" class="image"></button>
+  <button id="three" class="click" onclick="playGame('Stumps')"><img src="images/pinpng.com-cricket-png-images-734104.png" alt="stump image" class="image"></button>
 
   <div class="result-display">
     <h3 class="display" id="user-move"></h3>
@@ -24,7 +22,6 @@
     <h3 class="display" id="result"></h3>
     <h3 class="display" id="score"></h3>
   </div>
-
 
   <footer>
     <button class="reset" onclick="resetScore()">Reset</button>
@@ -35,14 +32,26 @@
     let score = scoreStr ? JSON.parse(scoreStr) : { win: 0, lost: 0, tie: 0 };
 
     function displayScore() {
-      return `Score - Won: ${score.win}, Lost: ${score.lost}, Tie: ${score.tie}`;
+      return `🏆 Score - Won: ${score.win}, Lost: ${score.lost}, Tie: ${score.tie}`;
     }
 
     function resetScore() {
       score = { win: 0, lost: 0, tie: 0 };
       localStorage.setItem('Score', JSON.stringify(score));
-      showResult();
+
+      document.querySelector('#user-move').style.display = 'none';
+      document.querySelector('#computer-move').style.display = 'none';
+      document.querySelector('#result').style.display = 'none';
+
+      document.querySelector('#score').innerHTML = displayScore();
+      document.querySelector('#score').style.display = 'block';
     }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.display').forEach(el => el.style.display = 'none');
+      document.querySelector('#score').style.display = 'block';
+      document.querySelector('#score').innerHTML = displayScore();
+    });
 
     function generateComputerChoice() {
       const choices = ['Bat', 'Ball', 'Stumps'];
@@ -50,32 +59,44 @@
     }
 
     function getResult(userMove, computerMove) {
-      if (userMove === computerMove) {
-        score.tie++;
-        return `It's a tie!`;
-      }
+  if (userMove === computerMove) {
+    score.tie++;
+    return `It's a tie!`;
+  }
 
-      const winningMoves = {
-        'Bat': 'Ball',
-        'Ball': 'Stumps',
-        'Stumps': 'Bat'
-      };
+  const winningMoves = {
+    'Bat': 'Ball',
+    'Ball': 'Stumps',
+    'Stumps': 'Bat'
+  };
 
-      if (winningMoves[userMove] === computerMove) {
-        score.win++;
-        return `You Won!`;
-      } else {
-        score.lost++;
-        return `Computer Won!`;
-      }
-    }
+  if (winningMoves[userMove] === computerMove) {
+    score.win++;
+    return `You Won!`;
+  } else {
+    score.lost++;
+    return `Computer Won!`;
+  }
+}
+
 
     function showResult(userMove = '', computerMove = '', result = '') {
       localStorage.setItem('Score', JSON.stringify(score));
-      document.querySelector('#user-move').innerText = userMove ? `You chose ${userMove}.` : '';
-      document.querySelector('#computer-move').innerText = computerMove ? `Computer chose ${computerMove}.` : '';
-      document.querySelector('#result').innerText = result;
-      document.querySelector('#score').innerText = displayScore();
+
+      let resultEmoji = '🤝';
+      if (result.includes('You Won')) resultEmoji = '🧑🏾👩🏽‍🦰';
+      if (result.includes('Computer Won')) resultEmoji = '🤖';
+
+      document.querySelector('#user-move').innerHTML = userMove ? `🧑🏾👩🏽‍🦰 You chose ${userMove}.` : '';
+      document.querySelector('#computer-move').innerHTML = computerMove ? `🤖 Computer chose ${computerMove}.` : '';
+      document.querySelector('#result').innerHTML = `${resultEmoji} ${result}`;
+
+      document.querySelector('#user-move').style.display = userMove ? 'block' : 'none';
+      document.querySelector('#computer-move').style.display = computerMove ? 'block' : 'none';
+      document.querySelector('#result').style.display = result ? 'block' : 'none';
+
+      document.querySelector('#score').innerHTML = displayScore();
+      document.querySelector('#score').style.display = 'block';
     }
 
     function playGame(userMove) {
@@ -84,7 +105,6 @@
       showResult(userMove, computerMove, result);
     }
 
-    // Display initial score on page load
     showResult();
   </script>
 </body>

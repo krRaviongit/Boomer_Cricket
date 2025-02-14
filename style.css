@@ -6,94 +6,88 @@
   font-family: font2;
   src: url("../fonts/Comfortaa-Bold.ttf");
 }
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  /* background: linear-gradient(90deg, hsla(189, 86%, 64%, 1) 0%, hsla(277, 67%, 77%, 1) 50%, hsla(218, 88%, 59%, 1) 100%); */
-  /* background: url("images/pickled-stardust-ELxsvsbGCo4-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; */
-  background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
-
+body {
+  background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.3); 
-  background-blend-mode: lighten; 
-  padding-top: 150px;  
+  padding-top: 150px;
 }
-.header{
+
+.header {
   display: flex;
-  justify-content: center; 
-  align-items: center;       
-  height: 100px;             
-  /* background-color: none;  */
-  width: 100%;              
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   margin-top: 25px;
 }
 
-.logo{
-  width: 155px;       
-  height: auto;       
+.logo {
+  width: 155px;
+  height: auto;
   vertical-align: middle;
-  /* mix-blend-mode:color-burn; */
-  
 }
-#firsth{
-  /* background: -webkit-linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%); 
-  
-  -webkit-background-clip : text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent; */
+
+#firsth {
   color: rgb(0, 49, 92);
   font-family: font1;
-  font-size: 7rem;   
-  font-weight:500;
+  font-size: 7rem;
+  font-weight: 500;
   display: flex;
-  align-items: center; 
-  gap: 10px;          
-
-  
+  align-items: center;
+  gap: 10px;
 }
-.click{
-  height:250px;
+
+.click {
+  height: 250px;
   width: 250px;
   margin: 40px 20px;
   border-radius: 200px;
-  /* background: linear-gradient(90deg, hsla(177, 87%, 79%, 1) 0%, hsla(235, 89%, 70%, 1) 100%); */
   background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
   box-shadow: 4px 4px 5px rgb(0, 0, 0);
   padding: 10px 20px;
   font-size: 18px;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease,transform 0.3s ease-in-out;
-  mix-blend-mode:normal;
+  transition: background-color 0.3s ease, transform 0.3s ease-in-out;
 }
+
 .click:hover {
-  /* background-color:rgb(255, 0, 0); */
   transform: scale(1.07);
 }
-.image{
+
+.image {
   height: 160px;
 }
-.result-display{
-  display:flex;
+
+.result-display {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   line-height: 1.5;
+  gap: 10px;
 }
-.display{
-  font-family:font2;
+
+/* Hide empty result bars when reset */
+.hidden {
+  display: none;
+}
+
+/* Common styling for result bars */
+.display {
+  font-family: font2;
   font-weight: bold;
   font-size: 25px;
   text-transform: uppercase;
-  padding:5px;
+  padding: 10px 20px; /* Added padding to prevent text overflow */
   background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
   color: rgb(55, 55, 55);
   width: 500px;
@@ -101,8 +95,19 @@ body{
   border-radius: 100px;
   border: 1px solid black;
   box-shadow: 2px 2px 3px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space between emoji and text */
 }
-.reset{
+
+/* Score bar should always be visible with better spacing */
+#score {
+  padding: 15px 20px; /* More padding to keep content inside */
+}
+
+/* Reset Button */
+.reset {
   margin-top: 50px;
   margin-bottom: 5px;
   background-color: red;
@@ -112,7 +117,7 @@ body{
   border-radius: 100px;
   border: none;
   box-shadow: 2px 2px 3px rgb(62, 62, 62);
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
   font-weight: 900;
   text-transform: uppercase;
@@ -120,13 +125,9 @@ body{
   letter-spacing: 5px;
   transition: background-color 0.3s ease-in, transform 0.2s ease-in;
 }
-.reset:hover{
+
+.reset:hover {
   background-color: rgb(222, 1, 1);
   transform: scale(1.07);
   box-shadow: 2px 2px 3px rgb(209, 209, 209);
 }
-
-
-
-
-
