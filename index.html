@@ -6,18 +6,15 @@
 </head>
 <body>
   <div class="header">
-    <h1 id="firsth">Boomer Cricket</h1>
-    <img src="27172420_6061.svg" alt="logo">
+    <h1 id="firsth">Cricket Fever</h1>
+    <img class="logo"  src="27172420_6061.svg" alt="logo">
   </div>
  
-  <button id="one"  class="click" onclick="playGame('Bat')"><img src="images/bat.png" alt="bat image"></button>
-  <button id="two"  class="click" onclick="playGame('Ball')">
-    <img src="images/ball.png" alt="ball image" class="choice-button">
-  </button>
-  <button id="three"  class="click" onclick="playGame('Stumps')">
-    <img src="images/stump.png" alt="stump image" class="choice-button">
-  </button>
+  <button id="one"  class="click" onclick="playGame('Bat')"><img src="images/bat.png" alt="bat image" class="image"></button>
+  <button id="two"  class="click" onclick="playGame('Ball')"><img src="images/ball.png" alt="ball image" class="image"></button>
+  <button id="three"  class="click" onclick="playGame('Stumps')"><img src="images/pinpng.com-cricket-png-images-734104.png" alt="stump image"class="image"></button>
 
+ 
   <h3 id="user-move"></h3>
   <h3 id="computer-move"></h3>
   <h3 id="result"></h3>
@@ -33,7 +30,7 @@
     let score = scoreStr ? JSON.parse(scoreStr) : { win: 0, lost: 0, tie: 0 };
 
     function displayScore() {
-      return `Number of Matches Won: ${score.win}, Lost: ${score.lost}, Tie: ${score.tie}`;
+      return `Score - Won: ${score.win}, Lost: ${score.lost}, Tie: ${score.tie}`;
     }
 
     function resetScore() {
