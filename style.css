@@ -8,22 +8,24 @@
   box-sizing: border-box;
 }
 body{
-  background: linear-gradient(90deg, hsla(189, 86%, 64%, 1) 0%, hsla(277, 67%, 77%, 1) 50%, hsla(218, 88%, 59%, 1) 100%);
+  /* background: linear-gradient(90deg, hsla(189, 86%, 64%, 1) 0%, hsla(277, 67%, 77%, 1) 50%, hsla(218, 88%, 59%, 1) 100%); */
   /* background: url("images/pickled-stardust-ELxsvsbGCo4-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover; */
+  background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+
   text-align: center;
   background-color: rgba(255, 255, 255, 0.3); 
   background-blend-mode: lighten; 
-  padding-top: 150px;  /* Prevent content from overlapping with header */
+  padding-top: 150px;  
 }
 .header{
   display: flex;
-  justify-content: center;  /* Center horizontally */
-  align-items: center;       /* Align items vertically */
-  height: 100px;             /* Adjust header height */
-  background-color: none; /* Light background */
-  width: 100%;               /* Full width */
+  justify-content: center; 
+  align-items: center;       
+  height: 100px;             
+  /* background-color: none;  */
+  width: 100%;              
   position: absolute;
   top: 0;
   left: 0;
@@ -31,10 +33,10 @@ body{
 }
 
 .logo{
-  width: 140px;         /* Adjust logo size */
-  height: auto;        /* Maintain aspect ratio */
+  width: 155px;       
+  height: auto;       
   vertical-align: middle;
-  mix-blend-mode:color-burn;
+  /* mix-blend-mode:color-burn; */
   
 }
 #firsth{
@@ -44,30 +46,32 @@ body{
           background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: font1;
-  font-size: 5.5rem;   /* Adjust heading size */
+  font-size: 5.5rem;   
   font-weight: bold;
   display: flex;
-  align-items: center; /* Align text with image */
-  gap: 10px;          /* Space between text and logo */
+  align-items: center; 
+  gap: 10px;          
 
   
 }
 .click{
   height:250px;
   width: 250px;
-  margin: 0px 20px;
+  margin: 40px 20px;
   border-radius: 200px;
-  background: linear-gradient(90deg, hsla(177, 87%, 79%, 1) 0%, hsla(235, 89%, 70%, 1) 100%);
+  /* background: linear-gradient(90deg, hsla(177, 87%, 79%, 1) 0%, hsla(235, 89%, 70%, 1) 100%); */
+  background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
   box-shadow: 4px 4px 5px rgb(0, 0, 0);
   padding: 10px 20px;
   font-size: 18px;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease,transform 0.3s ease-in-out;
   mix-blend-mode:normal;
 }
 .click:hover {
-  background-color: rgb(255, 255, 255);
+  /* background-color:rgb(255, 0, 0); */
+  transform: scale(1.07);
 }
 .image{
   height: 160px;
