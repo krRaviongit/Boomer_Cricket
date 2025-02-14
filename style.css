@@ -96,13 +96,20 @@ body{
   height: 50px;
   border-radius: 100px;
   border: none;
-  box-shadow: 2px 2px 3px black;
+  box-shadow: 2px 2px 3px rgb(62, 62, 62);
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
   font-weight: 900;
   text-transform: uppercase;
   color: white;
   letter-spacing: 5px;
+  transition: background-color 0.3s ease-in, transform 0.2s ease-in;
+}
+.reset:hover{
+  background-color: rgb(222, 1, 1);
+  transform: scale(1.07);
+  box-shadow: 2px 2px 3px rgb(209, 209, 209);
+
 }
 
 
