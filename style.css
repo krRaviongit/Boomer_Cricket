@@ -68,6 +68,8 @@ body {
 
 .click:hover {
   transform: scale(1.07);
+  background: linear-gradient(90deg, rgb(233, 233, 233) 0%, rgb(41, 120, 205)  100%);
+  box-shadow:none;
 }
 
 .image {
